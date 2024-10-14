@@ -1,0 +1,57 @@
+{% extends "Home.html" %}
+{% block title %}<title>About Page</title>{% endblock %}
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'CSS/Style About.css' %}">
+
+{% block content %}
+
+
+    <header>
+        <h1>About Our Educational Institute</h1>
+        <p>Empowering minds for a brighter future.</p>
+    </header>
+    
+    <div class="container">
+        <section class="mission">
+            <h2>Our Mission</h2>
+            <p>Our mission is to provide high-quality education that prepares students for success in their careers and lives.</p>
+        </section>
+
+        <section class="vision">
+            <h2>Our Vision</h2>
+            <p>To be a leading educational institute recognized for excellence in teaching, research, and community service.</p>
+        </section>
+
+        <section class="values">
+            <h2>Our Values</h2>
+            <ul>
+                <li>Integrity</li>
+                <li>Innovation</li>
+                <li>Inclusivity</li>
+                <li>Excellence</li>
+            </ul>
+        </section>
+
+        <section class="team">
+            <h2>Meet Our Team</h2>
+            <div class="team-member">
+                <h3>Dhruv Gupta</h3>
+                <p>Founder & Principal</p>
+                <p>With over 20 years of experience, Dhruv leads the institute with a vision for modern education.</p>
+            </div>
+            <div class="team-member">
+                <h3>Rupinder Singh</h3>
+                <p>Director of Studies</p>
+                <p>Rupinder ensures that our curriculum meets the highest academic standards.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Educational Institute. All rights reserved.</p>
+    </footer>
+
+
+<!-- <h2>Inheritance- Content Different but navigation bar same on each page.</h2> -->
+{% endblock %}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}<title>Home Page</title>{% endblock %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'CSS/Style.css' %}">
+    
+</head>
+<body>
+        <header>
+            <h1>Educational Resources</h1>
+            <nav>
+                <ul>
+                    <li><a href="Project">Courses</a></li>
+                    <li><a href="aboutpage">About Us</a></li>
+                    <li><a href="contactform">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        {% block content %}
+        <main>
+            <section id="courses">
+                <h2>Available Courses</h2>
+                <div class="course-grid">
+                    <div class="course">
+                        <img src="{% static 'Images/Digital Marketing.png' %}" alt="Course 1">
+                        <h3>Digital Marketing</h3>
+                        <p>Learn how to handle Social Media.</p>
+                    </div>
+                    <div class="course">
+                        <img src="{% static 'Images/Full Stack.png' %}" alt="Course 2">
+                        <h3>Full Stack Web Development</h3>
+                        <p>Learn how to make a Website.</p>
+                    </div>
+                    <div class="course">
+                        <img src="{% static 'Images/Machine & AI Learning.png' %}" alt="Course 3">
+                        <h3>Machine & AI Learning</h3>
+                        <p>Explore the world of Data Science.</p>
+                    </div>
+                </div>
+            </section>
+    
+            <section id="about">
+                <h2>About Us</h2>
+                <p>We are dedicated to providing quality educational resources to help you learn and grow.</p>
+            </section>
+    
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <form id="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+        </main>
+    
+        <footer>
+            <p>&copy; 2024 Educational Resources. All rights reserved.</p>
+        </footer>
+    {% endblock %}
+        <script src="{% static 'JS/Script.js' %}"></script>
+
+    </body>
+    </html>
+       
+      
+
+    
+</body>
+</html>
+
+
+
+  
+</body>
+</html>

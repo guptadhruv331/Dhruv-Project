@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- {% block title %}<title>Dhruv</title>{% endblock %} -->
+     <style>
+        body{
+            text-align: center;
+            background-color: aqua;
+        }
+     </style>
+     
+</head>
+<body> 
+    <form method="POST" class="post-form">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Save</button>
+    </form>
+
+    <!-- <a href="cvb">Dhruv</a>
+    <a href="mnb">Simar</a>
+    <a href="zxc">Rupinder</a> -->
+    <!-- <a href="jgd">Home Page</a>
+    <a href="dgj">About Page</a>
+    <a href="gjd">Contact Page</a> -->
+
+    <!-- {% block content %}
+    <h1>Name= Dhruv <br>
+        Roll Number= 13924 <br>
+        Course= Full Stack Web Development <br>
+        Batch Timings= 9:00 am to 10:00 <br>
+        Teacher= Pallavi Ma'am
+    </h1>
+    {% endblock %} -->
+
+
+    <!-- <h1 style="color: aqua;">Hello</h1>
+    <h1 style="width: max-content; color: blue; background-color: aquamarine;">GOOD MORNING</h1>
+    <h2 style="color: chartreuse; background-color: chocolate;border-color: cadetblue;">My name is Dhruv Gupta</h2>
+    <h3 style="color: cornflowerblue;background-color: blueviolet;">I am from Ambala City.</h3>
+    <h4 style="color: royalblue;background-color: chartreuse;width: min-content;">I am a student in Ambala in HIIT course full stack developer.</h4>
+    <h5 style="color: antiquewhite;background-color: blue;width: fit-content;">12th pass year is 2022</h5>
+    <h6 style="height: max-content;color: darkgreen;background-color: chartreuse;">12th pass year is 2020 in lockdown</h6> -->
+
+</body>
+</html>
